@@ -1,0 +1,83 @@
+{
+  "name": "formatr",
+  "version": "1.0.2",
+  "description": "Message formatting utility.",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blujedis/formatr.git"
+  },
+  "build": {
+    "clean": [
+      "./dist"
+    ],
+    "copy": []
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx"
+    ],
+    "exclude": [
+      "src/**/*.spec.ts"
+    ],
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "require": [
+      "./build/spec"
+    ],
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "sourceMap": true,
+    "instrument": true
+  },
+  "keywords": [
+    "format",
+    "format string",
+    "string format",
+    "template",
+    "inspect",
+    "util"
+  ],
+  "author": "Blujedis <blujedicorp@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blujedis/formatr/issues"
+  },
+  "homepage": "https://github.com/blujedis/formatr#readme",
+  "devDependencies": {
+    "@types/chai": "^4.0.1",
+    "@types/lodash.camelcase": "^4.3.4",
+    "@types/lodash.capitalize": "^4.2.4",
+    "@types/lodash.get": "^4.4.4",
+    "@types/lodash.lowercase": "^4.3.4",
+    "@types/lodash.set": "^4.3.4",
+    "@types/lodash.startcase": "^4.4.4",
+    "@types/lodash.uppercase": "^4.3.4",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^8.0.28",
+    "chai": "^4.0.2",
+    "mocha": "^5.2.0",
+    "nyc": "^11.2.1",
+    "stiks": "^1.1.4",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.5.0",
+    "typedoc": "^0.7.1",
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "lodash.camelcase": "^4.3.0",
+    "lodash.capitalize": "^4.2.1",
+    "lodash.get": "^4.4.2",
+    "lodash.lowercase": "^4.3.0",
+    "lodash.set": "^4.3.2",
+    "lodash.startcase": "^4.4.0",
+    "lodash.uppercase": "^4.3.0"
+  }
+}
